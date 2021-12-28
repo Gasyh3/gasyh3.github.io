@@ -22,6 +22,14 @@
     opacity: 1;
   }
 }
+@keyframes itemCheckSpin {
+  from {
+    transform: rotate(-260deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 @keyframes loading {
   from {
     opacity: 1;
@@ -160,14 +168,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  transform: rotate(-360deg);
-  transition-duration: 0.7s;
-}
-.item:hover .item__wrapIcon {
-  transform: rotate(0);
 }
 .item__icon {
   color: #99E2D0;
+}
+.item:hover i {
+  animation: itemCheckSpin 0.4s ease-in-out;
 }
 
 .delay-0 {
@@ -402,9 +408,10 @@
   position: relative;
   padding-bottom: 8px;
   font-weight: 400;
+  border-bottom: #99E2D0 4px solid;
+  width: 45px;
 }
 .submenus .submenu::after {
-  content: "";
   width: 3rem;
   height: 0.25rem;
   background-color: #99E2D0;
