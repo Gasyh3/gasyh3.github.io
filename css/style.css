@@ -1,13 +1,16 @@
 @charset "UTF-8";
 /* == Importation de la bibliothèque math == */
 /* ===== Imporation des fichiers ===== */
-/* === font size=== */
+/* === Variables principales === */
+/* === Variables à part === */
+/* === Taille de polices=== */
 /* === La taille des icones === */
 /* == Permet de modifier la poolice == */
 /* == Permet de changer 
     la couleur et la taille d'une icone== */
 /* == Permet de mettre en colonne (flexbox)
     met en place la position des éléments == */
+/* === Animation d'apparition des items de menu === */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @keyframes itemAppear {
@@ -22,6 +25,7 @@
     opacity: 1;
   }
 }
+/* === Animation de rotation du check === */
 @keyframes itemCheckSpin {
   from {
     transform: rotate(-260deg);
@@ -30,6 +34,7 @@
     transform: rotate(0);
   }
 }
+/* === Animation chargement de la page === */
 @keyframes loading {
   from {
     opacity: 1;
@@ -40,6 +45,7 @@
     z-index: -1;
   }
 }
+/* === Animation effet sur le loading spinner=== */
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -289,15 +295,27 @@
   width: 32px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 30px;
+  font-size: 20px;
   color: black;
+}
+@media (min-width: 992px) {
+  .header__arrow {
+    font-size: 30px;
+  }
 }
 .header__logo {
   font-family: "Shrikhand";
-  font-size: 40px;
+  font-size: 30px;
   color: black;
   margin: 0;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .header__logo {
+    font-family: "Shrikhand";
+    font-size: 40px;
+    color: black;
+  }
 }
 .header__logo--alignement {
   text-align: center;
