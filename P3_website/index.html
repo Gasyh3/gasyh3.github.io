@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./scss/vendors/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Ohmyfood</title>
+    </head>
+    <body>
+        <!-- LOADING-->
+        <div class="loading__page">
+            <div class="loader">
+                <div class="loader__spin"></div>
+                <div class="loader__spin"></div>
+            </div>
+        </div>
+        <!--HEADER  -->
+        <header class="header">
+            <h1 class="header__logo">ohmyfood</h1> 
+        </header>
+        <main>
+            <section class="localisation"> <!-- Localisation -->
+                <h2 class="localisation__title"> localisation</h2>
+                <i class="fas fa-map-marker-alt localisation__icon"></i>
+                <span class="localisation__text"> Paris, Bellevillle</span>
+            </section>
+            <section class="mainTitle"> <!-- Post Header -->
+                <h2 class="mainTitle__title"> Réservez le menu qui vous convient</h2>   
+                <p class="mainTitle__text"> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>  
+                <!-- changer la taille du boutton (flexbox modifie la taille du button)-->
+                <a href="#restaurant" class="btn" >Explorer nos restaurants</a>     
+            </section>
+            <section class="fonctionnement"> <!-- Fontionnement -->
+                <div class="container">
+                    <h2 class="fonctionnement__title">Fonctionnement</h2>
+                    <ol class="fonctionnement__list">
+                        <li class="fonctionnement__step">
+                            <i class="fas fa-mobile-alt fonctionnement__icon"></i>
+                            <span class="fonctionnement__text">Choisissez un restaurant</span>
+                        </li>
+                        <li class="fonctionnement__step">
+                            <i class="fas fa-list fonctionnement__icon"></i>
+                            <span class="fonctionnement__text">Composez votre menu</span>
+                        </li>
+                        <li class="fonctionnement__step">
+                            <i class="fas fa-store fonctionnement__icon"></i>
+                            <span class="fonctionnement__text">Dégustez au restaurant</span>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id ="restaurant" class="restaurant"> <!-- Restaurants -->
+                <div class="container">
+                    <h2 class="restaurant__title">Restaurants</h2>
+                    <div class="restaurant__cards"> <!-- Choix de resto (bleu)-->
+                        <a href="./la_palette_du_gout.html" class="card">
+                            <img class="card__img" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                            <h5 class="card__new">Nouveau</h5>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h4 class="card__title">La palette du goût</h4>
+                                    <span class="card__text">Ménilmontant</span>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 0 545.131 512.131" xml:space="preserve">
+                                        <path d="M511.489,167.372c-7.573-84.992-68.16-146.667-144.107-146.667c-44.395,0-85.483,20.928-112.427,55.488
+                                            c-26.475-34.923-66.155-55.488-110.037-55.488c-75.691,0-136.171,61.312-144.043,145.856c-0.811,5.483-2.795,25.045,4.395,55.68
+                                            C15.98,267.532,40.62,308.663,76.759,341.41l164.608,144.704c4.011,3.541,9.067,5.312,14.08,5.312
+                                            c4.992,0,10.005-1.749,14.016-5.248L436.865,340.13c24.704-25.771,58.859-66.048,70.251-118.251
+                                            C514.391,188.514,511.66,168.268,511.489,167.372z"/>
+                                            <defs>
+                                                <linearGradient id="text-fill-1"> 
+                                                    <stop offset="0%" stop-color="#9356DC" />
+                                                    <stop offset="100%" stop-color="#FF79DA" />
+                                                </linearGradient>
+                                            </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./la_note_enchantee.html" class="card">
+                            <img class="card__img" src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                            <h5 class="card__new">Nouveau</h5>
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h4 class="card__title">La note enchantée</h4>
+                                    <span class="card__text">Charonne</span>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 0 545.131 512.131" xml:space="preserve">
+                                        <path d="M511.489,167.372c-7.573-84.992-68.16-146.667-144.107-146.667c-44.395,0-85.483,20.928-112.427,55.488
+                                            c-26.475-34.923-66.155-55.488-110.037-55.488c-75.691,0-136.171,61.312-144.043,145.856c-0.811,5.483-2.795,25.045,4.395,55.68
+                                            C15.98,267.532,40.62,308.663,76.759,341.41l164.608,144.704c4.011,3.541,9.067,5.312,14.08,5.312
+                                            c4.992,0,10.005-1.749,14.016-5.248L436.865,340.13c24.704-25.771,58.859-66.048,70.251-118.251
+                                            C514.391,188.514,511.66,168.268,511.489,167.372z"/>
+                                            <defs>
+                                                <linearGradient id="text-fill-2"> 
+                                                    <stop offset="0%" stop-color="#9356DC" />
+                                                    <stop offset="100%" stop-color="#FF79DA" />
+                                                </linearGradient>
+                                            </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./a_la_francaise.html" class="card">
+                            <img class="card__img" src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                             <div class="card__info">
+                                <div class="card__content">
+                                    <h4 class="card__title">À la française</h4>
+                                    <span class="card__text">Cité Rouge</span>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 0 545.131 512.131" xml:space="preserve">
+                                        <path d="M511.489,167.372c-7.573-84.992-68.16-146.667-144.107-146.667c-44.395,0-85.483,20.928-112.427,55.488
+                                            c-26.475-34.923-66.155-55.488-110.037-55.488c-75.691,0-136.171,61.312-144.043,145.856c-0.811,5.483-2.795,25.045,4.395,55.68
+                                            C15.98,267.532,40.62,308.663,76.759,341.41l164.608,144.704c4.011,3.541,9.067,5.312,14.08,5.312
+                                            c4.992,0,10.005-1.749,14.016-5.248L436.865,340.13c24.704-25.771,58.859-66.048,70.251-118.251
+                                            C514.391,188.514,511.66,168.268,511.489,167.372z"/>
+                                            <defs>
+                                                <linearGradient id="text-fill-3"> 
+                                                    <stop offset="0%" stop-color="#9356DC" />
+                                                    <stop offset="100%" stop-color="#FF79DA" />
+                                                </linearGradient>
+                                            </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./le_delice_des_sens.html" class="card">
+                            <img class="card__img" src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                            <div class="card__info">
+                                <div class="card__content">
+                                    <h4 class="card__title">Le délice des sens</h4>
+                                    <span class="card__text">Folie-Méricourt</span>
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 0 545.131 512.131" xml:space="preserve">
+                                        <path d="M511.489,167.372c-7.573-84.992-68.16-146.667-144.107-146.667c-44.395,0-85.483,20.928-112.427,55.488
+                                            c-26.475-34.923-66.155-55.488-110.037-55.488c-75.691,0-136.171,61.312-144.043,145.856c-0.811,5.483-2.795,25.045,4.395,55.68
+                                            C15.98,267.532,40.62,308.663,76.759,341.41l164.608,144.704c4.011,3.541,9.067,5.312,14.08,5.312
+                                            c4.992,0,10.005-1.749,14.016-5.248L436.865,340.13c24.704-25.771,58.859-66.048,70.251-118.251
+                                            C514.391,188.514,511.66,168.268,511.489,167.372z"/>
+                                            <defs>
+                                                <linearGradient id="text-fill"> 
+                                                    <stop offset="0%" stop-color="#9356DC" />
+                                                    <stop offset="100%" stop-color="#FF79DA" />
+                                                </linearGradient>
+                                            </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <span class="footer__logo">ohmyfood </span> 
+                <ul class="footer__list">
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">
+                            <i class="fas fa-utensils footer__icon"></i>
+                            Proposer un restaurant</a>
+                    </li>
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">
+                            <i class="fas fa-hands-helping footer__icon"></i>
+                            Devenir partenaire</a>
+                    </li>
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">Mentions légales</a>
+                    </li>
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
