@@ -1,33 +1,42 @@
 <!DOCTYPE html>
+<!-- Modification : changement lang-"fr"-->
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Contactez le support - La Chouette Agence"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
+	<head>
+   		<meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
+		   
+<!-- Modification : Keywords plus pertinents-->
+    	<meta name="keywords" 
+			  content="contact la chouette agence, contact agence web design, 
+			  creation site web, site internet, Lyon">
 
-    <script src="./js/jquery-2.1.0.min.js" defer></script>
-    <script src="./js/bootstrap.min.js" defer></script>
-    <script src="./js/blocs.min.js" defer></script>
-    <script src="./js/jqBootstrapValidation.js" defer></script>
-    <script src="./js/formHandler.js" defer></script>
 
-    <title>Contact</title>
 
-    <!-- Analytics -->
+ <!-- Modification : Mise en place d'une description-->   
+		<meta name="description" 
+		  	  content="Contactez La chouette agence, entreprise Web Design à Lyon qui accompagne tout le monde 
+					   dans leur projet de création et d'optimisation">
+ 
+	
+	
+	
+				<!-- Modification : Indexisation sur les moteurs de recherche-->
+ 		<meta name="robot" content="index, follow">  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+ <!-- Modification : Prévention de duplication-->
+ 		<link rel="canonical" href="https://gasyh3.github.io/P4_website/after_optimisation/contact.html"/>
+<!-- Modification : Convertir favicon .png en .ico-->
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
 
-    <!-- Analytics END -->
+    	<title>Contact - La Chouette Agence</title>
   </head>
   <body>
     <!-- Principal conteneur -->
@@ -61,7 +70,10 @@
                   <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                  <a href="contact.html">Contact &gt;</a>
+                  <a href="#bloc-2-services" title="Services">Services</a>
+                </li>
+                <li>
+                  <a href="#bloc-4-portfolio" title="Portfolio">Portfolio</a>
                 </li>
               </ul>
             </div>
@@ -105,57 +117,36 @@
           <div class="container bloc-lg">
             <div class="row">
               <div class="col-sm-6">
-                <form
-                  id="form_1"
-                  novalidate
-                  success-msg="Your message has been sent."
-                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-                >
+                <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
                   <div class="form-group">
-                    <label for="name"> Nom </label>
-                    <input id="name" class="form-control" required />
+                    <label for="name">
+                      Nom
+                    </label>
+                    <input type="text" id="name" placeholder="Veuillez renseigner votre nom et prénom"
+                         class="form-control" required />
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">
+                      Adresse email
+                    </label>
+                    <input type="email" id="email" placeholder="Veuillez renseigner votre adresse email"
+                         class="form-control" required />
                   </div>
                   <div class="form-group">
-                    <label for="email"> Adresse email </label>
-                    <input
-                      id="email"
-                      class="form-control"
-                      type="email"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="input_504">
+                    <label for="info">
                       Comment nous avez-vous connu ?
                     </label>
-                    <input
-                      class="form-control"
-                      type="email"
-                      required
-                      id="input_504"
-                    />
+                    <input class="form-control" type="text" id="info" placeholder="Racontez-nous" required />
                   </div>
                   <div class="form-group">
                     <label for="message">
-                      Brief de votre projet (Ajoutez autant de détails que
-                      nécessaire)<br /> </label
-                    ><textarea
-                      id="message"
-                      class="form-control"
-                      rows="4"
-                      cols="50"
-                      required
-                    ></textarea>
-                  </div>
-                  <button
-                    class="
-                      bloc-button
-                      btn btn-lg btn-block
-                      cta-hero
-                      btn-atomic-tangerine
-                    "
-                    type="submit"
-                  >
+                      Parlez-nous de votre projet. Ajoutez autant de détails que nécessaire.<br>
+                    </label>
+                    <textarea id="message" class="form-control" rows="4" cols="50"
+                          placeholder="Entrez votre message ici" required></textarea>
+                  </div> 
+                  <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
                     Envoyer
                   </button>
                 </form>
@@ -222,6 +213,13 @@
         </div>
       </footer>
       <!-- Footer - bloc-8 END -->
+      <!-- JavaScript-->
+		<script src="./js/jquery-2.1.0.min.js" defer></script>
+		<script src="./js/bootstrap.min.js" defer></script>
+		<script src="./js/blocs.min.js" defer></script>
+		<script src="./js/jqBootstrapValidation.js" defer></script>
+		<script src="./js/formHandler.js" defer></script>
+<!-- JavaScript - END-->
     </div>
     <!-- Principal conteneur END -->
   </body>
