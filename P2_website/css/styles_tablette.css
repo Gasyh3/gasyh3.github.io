@@ -1,0 +1,61 @@
+main {
+    padding: 0;
+}
+
+.bloc-filtre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtre {
+    margin-bottom: 12px;
+}
+/* ==== Section : Hebergement et Populaire ===== */
+#section-hebergement-populaire {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: 100%;
+    background-color: white;
+}
+
+/* ==== Section populaire ==== */
+#section-populaire {
+	display: flex;
+    flex-direction: column;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+    flex-basis: 100%;
+}
+
+/* ==== Section : hebergement ===== */
+#section-hebergement {
+	display: flex;
+	flex-direction: column;
+    flex-basis: 100%;
+	background-color:#F2F2F2;
+	border-radius: 15px;
+}
+
+/* ===== Section : activites ===== */
+.activites-global {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.activites-part-1 {
+    flex-basis: 40%;
+}
+
+.activites-part-2 {
+    flex-basis: 40%;
+}
+
+.activites-part-3 {
+    flex-basis: 40%;
+}
+
+.activites-part-4 {
+    flex-basis: 40%;
+}
