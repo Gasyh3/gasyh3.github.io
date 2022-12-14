@@ -1,0 +1,189 @@
+@media screen and (max-width:1200px) {
+
+
+    #header__nav{
+        display: none;
+    }
+
+
+    #hero{
+        height: 1600px;
+        justify-content: flex-start;
+    }
+
+   #hero .content{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: auto;
+   }
+
+   #hero .left{
+    width: 100%;
+    height: 700px;
+   }
+
+   #hero .right img{
+    height: 60vw ;
+}
+
+   #chaos-section .content{
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+   }
+
+    #chaos-section .right{
+    width: 90%;
+    margin-top: 20px;
+    }
+
+    #chaos-section img{
+    display: none;
+    }
+
+    #challenge-section{
+        padding-top: 50px;
+    }
+
+    #challenge-section .card{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    #challenge-section .card .text{
+        width: 80%;
+    }
+
+    #datafactory .illustration{
+    height: 100vw; 
+    }
+
+    #propilot .illustration{
+    right: 0;
+    height: 100vw;
+    
+    }
+
+
+    #trust-section .card{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #trust-section .left{
+        width: 100%;
+    }
+
+    #trust-section .right{
+        width: 90%;
+        height: 500px;
+    }
+
+    #article-section  h3{
+        width: 90vw;
+    }
+
+    #article-section .cards{
+    flex-direction: column;
+    }
+
+    #article-section article-section{
+        width: 80vw;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    article-section p{
+        width: 90%;
+    }
+
+    #demo-section .card{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #demo-section .content{
+        margin-left: 20px;
+    }
+
+    footer{
+    height: 70%;
+    background-position: right 0% bottom 0%;
+}
+
+
+    #footer__nav ul{
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    #footer div{
+    margin: 10px;
+    font-size: 16px;
+    }
+
+    .solution{
+        margin: 20px;
+    }
+
+    .propilot{
+        margin: 20px;
+    }
+
+    .book{
+        margin: 20px;
+    }
+
+
+   
+}
+
+
+@media screen and (max-width:590px){
+    #hero h1{
+    font-size: 10vw;
+   }
+   #hero{
+           height: 1400px;
+       }
+
+    .text h1{
+    font-size: 25px;
+    }
+
+    .text{
+        margin-left: 24px ;
+    }
+
+    .text h1 img{
+        height: 25px;
+    }
+    
+    #challenge-section li {   
+    height: 84px;
+    font-weight: 500;
+    font-size: 1em;
+    }
+
+    #challenge-section li i{
+    margin: 5px;
+    }
+
+    #trust-section .right p{
+
+    font-size: 25px;
+
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 0;
+    }
+
+    .author i {
+    height: 40px;
+    line-height: 2;
+}
+}
